@@ -13,7 +13,9 @@
             fontFamily: '{!! $chart->fontFamily() !!}',
             foreColor: '{!! $chart->foreColor() !!}',
             sparkline: {!! $chart->sparkline() !!},
+            @if($chart->stacked())
             stacked: {!! $chart->stacked() !!},
+            @endif
         },
         @if($chart->noData())
             noData: {!! $chart->noData() !!},
