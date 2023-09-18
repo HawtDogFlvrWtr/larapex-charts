@@ -265,7 +265,7 @@ class LarapexChart
      * @param bool $stacked
      * @return $this
      */
-    public function setStacked(bool $stacked): LarapexChart
+    public function setStacked(bool $stacked = true): LarapexChart
     {
         $this->stacked = $stacked;
         return $this;
